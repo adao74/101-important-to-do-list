@@ -38,7 +38,7 @@
       
       function setValueOf_Cant_Control(input) {
         thingI_Cant_Control = input
-        console.log(input)
+        // console.log(input)
       }
 
       function setValueOf_Must_Accept(input) {
@@ -50,7 +50,6 @@
         let newObject = document.createElement("h3")
         let text = document.createTextNode(thingI_Can_Control)
         newObject.appendChild(text)
-        
         // We want to append the new object in a specific Section object instead of the Body object
         // So we use the Document's method: "getElementById()" to select the section
         // document.body.appendChild(newObject)  
@@ -59,7 +58,10 @@
 
       function createObjectIn_Cant_ControlList() {
         let newObject = document.createElement("h3")
+        console.log(newObject)
+        debugger
         let text = document.createTextNode(thingI_Cant_Control)
+        
         newObject.appendChild(text)
         document.getElementById("things-i-cant-control").appendChild(newObject)
       }
@@ -70,7 +72,6 @@
         newObject.appendChild(text)
         document.getElementById("things-i-must-accept").appendChild(newObject)
       }
-
     </script>
   </body>
 </html>
